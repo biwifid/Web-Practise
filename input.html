@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            Name: <input id="name" type="text" name="Name" value=""><br>
+            Email: <input id="email" type="text" name="Email" value=""><br>
+            Age: <input id="age" type="text" name="Age" value=""><br>
+        </form>
+        <button type="button" onclick=show_info()>Submit</button>
+
+    </body>
+
+    <script>
+        function show_info() {
+            
+            name = document.getElementById('name').value;
+            email = document.getElementById('email').value;
+            age = document.getElementById('age').value;
+            var user = {};
+            user.name = name;
+            user.email = email;
+            user.age = age
+            console.log(user);
+        }
+    </script>
+</html>
